@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" type="image/x-icon" href="img/admission.png">
+</head>
+<body>
+    <div class="container">
+       <div class="form-main-container">
+        <form action="#" class="form-container">
+            <h1 class="form-heading form-title">Admissions</h1>
+            <table class="form-content admissions">
+                <tr>
+                    <th><label for="text">Stuent Name</label></th>
+                    <td>
+                        <input type="text" id="fullname" placeholder="enter your full name">
+                        <span class="icon-container full-name">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="date">Birth Date</label></th>
+                    <td><input type="datetime-local" id="birth-date"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email</label></th>
+                    <td>
+                        <input type="email" id="email" placeholder="enter your email">
+                        <span class="icon-container email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="select">Gender</label></th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="default">Chose your gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <span class="icon-container select-icon">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="select">Education Level</label></th>
+                    <td>
+                        <select name="grade" id="grade">
+                            <option value="default">Education Level</option>
+                            <option value="High-School-Gradute">High School Gradute</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Master">Master</option>
+                            <option value="PHD">PHD</option>
+                        </select>
+                        <span class="icon-container select-icon">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table class="parent-info-container form-content">
+                <h1 class="parent-info heading">Parent Information</h1>
+                <tr>
+                    <th><label for="text">Father Name</label></th>
+                    <td><input type="text" id="mother-name" placeholder="enter your father name"></td>
+                </tr>
+                <tr>
+                    <th><label for="text">Mother Name</label></th>
+                    <td><input type="text" id="mother-name" placeholder="enter your Mother name"></td>
+                </tr>
+            </table>
+            <table class="files-container form-content">
+                <h1 class="upload-files heading">Upload Files</h1>
+                <tr>
+                    <th><label for="file">Upload CV</label></th>
+                    <td><input type="file" id="cv" ></td>
+                </tr>
+                <tr>
+                    <th><label for="file">Upload Photo</label></th>
+                    <td><input type="file" id="photo"></td>
+                </tr>
+            </table>
+                <button type="submit" id="submit-btn" class="form-btn">Submit</button>
+        </form>
+       </div>
+       <div class="result-container">
+            <table>
+                <tr>
+                    <td id="name-result"></td>
+                </tr>
+                <tr>
+                    <td id="birth-date-result"></td>
+                </tr>
+                <tr>
+                    <td id="email-result"></td>
+                </tr>
+                <tr>
+                    <td id="gender-result"></td>
+                </tr>
+                <tr>
+                    <td id="education-result"></td>
+                </tr>
+                <tr>
+                    <td id="father-name-result"></td>
+                </tr>
+                <tr>
+                    <td id="mother-name-result"></td>
+                </tr>
+                <tr>
+                    <td id="cv-result"></td>
+                </tr>
+                <tr>
+                    <td id="photo-result"></td>
+                </tr>
+            </table>
+       </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
