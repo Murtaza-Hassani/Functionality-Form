@@ -11,33 +11,33 @@
 <body>
     <div class="container">
        <div class="form-main-container">
-        <form action="#" class="form-container">
+        <form class="form-container" onsubmit="formSubmit(event)">
             <h1 class="form-heading form-title">Admissions</h1>
             <table class="form-content admissions">
                 <tr>
-                    <th><label for="text">Stuent Name</label></th>
+                    <th><label for="fullname">Stuent Name</label></th>
                     <td>
-                        <input type="text" id="fullname" placeholder="enter your full name">
+                        <input type="text" name="fullname" id="fullname" placeholder="enter your full name">
                         <span class="icon-container full-name">
                             <i class="fa-regular fa-circle-user"></i>
                         </span>
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="date">Birth Date</label></th>
-                    <td><input type="datetime-local" id="birth-date"></td>
+                    <th><label for="birthDate">Birth Date</label></th>
+                    <td><input type="datetime-local" name="birthDate" id="birthDate"></td>
                 </tr>
                 <tr>
                     <th><label for="email">Email</label></th>
                     <td>
-                        <input type="email" id="email" placeholder="enter your email">
+                        <input type="email" name="email" id="email" placeholder="enter your email">
                         <span class="icon-container email">
                             <i class="fa-regular fa-envelope"></i>
                         </span>
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="select">Gender</label></th>
+                    <th><label for="gender">Gender</label></th>
                     <td>
                         <select name="gender" id="gender">
                             <option value="default">Chose your gender</option>
@@ -50,9 +50,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="select">Education Level</label></th>
+                    <th><label for="education">Education Level</label></th>
                     <td>
-                        <select name="grade" id="grade">
+                        <select name="education" id="education">
                             <option value="default">Education Level</option>
                             <option value="High-School-Gradute">High School Gradute</option>
                             <option value="Bachelor">Bachelor</option>
@@ -68,23 +68,23 @@
             <table class="parent-info-container form-content">
                 <h1 class="parent-info heading">Parent Information</h1>
                 <tr>
-                    <th><label for="text">Father Name</label></th>
-                    <td><input type="text" id="mother-name" placeholder="enter your father name"></td>
+                    <th><label for="fatherName">Father Name</label></th>
+                    <td><input type="text" name="fatherName" id="fatherName" placeholder="enter your father name"></td>
                 </tr>
                 <tr>
-                    <th><label for="text">Mother Name</label></th>
-                    <td><input type="text" id="mother-name" placeholder="enter your Mother name"></td>
+                    <th><label for="motherName">Mother Name</label></th>
+                    <td><input type="text" name="motherName" id="motherName" placeholder="enter your Mother name"></td>
                 </tr>
             </table>
             <table class="files-container form-content">
                 <h1 class="upload-files heading">Upload Files</h1>
                 <tr>
-                    <th><label for="file">Upload CV</label></th>
-                    <td><input type="file" id="cv" ></td>
+                    <th><label for="cv">Upload CV</label></th>
+                    <td><input type="file" name="cv" id="cv" ></td>
                 </tr>
                 <tr>
-                    <th><label for="file">Upload Photo</label></th>
-                    <td><input type="file" id="photo"></td>
+                    <th><label for="photo">Upload Photo</label></th>
+                    <td><input type="file" name="photo" id="photo"></td>
                 </tr>
             </table>
                 <button type="submit" id="submit-btn" class="form-btn">Submit</button>
@@ -93,35 +93,35 @@
        <div class="result-container">
             <table>
                 <tr>
-                    <td id="name-result"></td>
+                    <td id="nameResult"></td>
                 </tr>
                 <tr>
-                    <td id="birth-date-result"></td>
+                    <td id="birthResult"></td>
                 </tr>
                 <tr>
-                    <td id="email-result"></td>
+                    <td id="emailResult"></td>
                 </tr>
                 <tr>
-                    <td id="gender-result"></td>
+                    <td id="genderResult"></td>
                 </tr>
                 <tr>
-                    <td id="education-result"></td>
+                    <td id="educationResult"></td>
                 </tr>
                 <tr>
-                    <td id="father-name-result"></td>
+                    <td id="fatherResult"></td>
                 </tr>
                 <tr>
-                    <td id="mother-name-result"></td>
+                    <td id="motherResult"></td>
                 </tr>
                 <tr>
-                    <td id="cv-result"></td>
+                    <td id="cvResult"></td>
                 </tr>
                 <tr>
-                    <td id="photo-result"></td>
+                    <td id="photoResult"></td>
                 </tr>
             </table>
        </div>
     </div>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
